@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(230, 9, 9, 0.5);   
+}
+
+.container{
+    width: 20%;
+    min-width: 400px;
+    min-height: 550px;
+    background-color: rgba(9, 64, 128, 0.5);   
+   padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(70px,1fr));
+    margin: 0 auto;
+    margin-top: 10%;
+    border-radius: 1rem;
+    gap:10px;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr; 
+   
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+button{
+   font-weight: 400;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 1rem;
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: rgba(119, 148, 182, 0.2);   
+    overflow: hidden;
+    padding: 0;
+border: none;
+background: none
+}
+.container .screen{  
+    background-color: rgba(201, 208, 216, 0.5);
+    grid-column: 1/5;
+    border-radius: 5px;
+    text-align: right;
+    color:white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+button:last-of-type{
+    grid-column: 3/5;
+}
+button:hover{
+    background-color: rgba(201, 208, 216, 0.5);
+}
